@@ -1,0 +1,18 @@
+{
+    "name": "c110611/dummy",
+    "authors": [
+        {
+            "name": "c110611",
+            "email": "mauro.arima@caixa.gov.br"
+        }
+    ],
+    "require": {
+        "slim/slim": "~3.0",
+        "slim/twig-view": "~2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    }
+}

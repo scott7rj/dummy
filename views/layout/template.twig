@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DUMMY</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lib/plugins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lib/skins.min.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <style>
+        #divHeader {
+            margin:0;
+            padding:1rem;
+            float:left;
+            width: 100%;
+            background-color: #474544;
+        }
+        .aHeader {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+        .aHeader:enabled {
+            text-decoration: none;
+        }
+        .aHeader:visited {
+            text-decoration: none;
+        }
+        .aHeader:hover {
+            cursor: pointer;
+            text-decoration: none;
+            color: #CCCCCC; 
+        }
+        .aHeader:active {
+            text-decoration: none;
+        }
+    </style>
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <header id="header">
+        <div>
+            <div id="divHeader">
+                <a href="/dummy" class="aHeader">DUMMY</a>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <script src="js/lib/jquery3.5.1.js"></script>
+    <script src="js/lib/jquery-ui.min.js"></script>
+    <script src="js/lib/app.config.js"></script>
+    <script src="js/lib/app.min.js"></script>
+    <script src="js/main.js"></script>
+    {% block script %}{% endblock %}
+</body>
+</html>

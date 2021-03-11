@@ -1,0 +1,39 @@
+{% extends 'layout/template.twig' %}
+{% block content %}
+<style>
+	.well {
+		margin-top: 12rem;
+	}
+</style>
+<div id="divMain" role="main">
+	<div id="content">
+		<div class="col-lg-2 col-lg-offset-5" align="center">
+			<div class="well">
+				<form id="frmLogin" class="smart-form client-form" action="./login"  method="post">
+					<section>
+						<label class="input">
+							<input type="text" id="txtLogin" name="txtLogin" maxlength="7" placeholder="USUÁRIO" required autofocus>
+							<i class="icon-append fa fa-user"></i>
+						</label>
+					</section>
+
+					<section>
+						<label class="input">
+							<input type="password" name="txtPassword" name="txtPassword" placeholder="SENHA" required>
+							<i class="icon-append fa fa-lock"></i>
+						</label>
+					</section>
+					<section class="text-center">
+						<button class="btn btn-primary btn-xs">Entrar</button>
+					</section>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="js/login.js"></script>
+{% endblock %}
