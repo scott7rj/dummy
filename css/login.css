@@ -1,0 +1,43 @@
+#divHeader {
+    margin:0;
+    padding:1rem;
+    float:left;
+    width: 100%;
+    background-color: steelblue;
+}
+.aHeader {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.aHeader:enabled {
+    text-decoration: none;
+}
+.aHeader:visited {
+    text-decoration: none;
+}
+.aHeader:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #cccccc; 
+}
+.aHeader:active {
+    text-decoration: none;
+}
+#divLogin {
+    padding: 2.5rem 0 0 0;
+    float: left;
+    border: 2px solid gainsboro;
+    width:250px;
+    height: 130px;
+    background-color: snow;
+    border-radius: 3px;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+#divLoginChild {
+    border: 1px solid transparent;
+}

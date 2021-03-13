@@ -9,48 +9,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/lib/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/lib/plugins.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/lib/skins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
     <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <style>
-        #divHeader {
-            margin:0;
-            padding:1rem;
-            float:left;
-            width: 100%;
-            background-color: #474544;
-        }
-        .aHeader {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            color: white;
-            font-size: 2rem;
-        }
-        .aHeader:enabled {
-            text-decoration: none;
-        }
-        .aHeader:visited {
-            text-decoration: none;
-        }
-        .aHeader:hover {
-            cursor: pointer;
-            text-decoration: none;
-            color: #CCCCCC; 
-        }
-        .aHeader:active {
-            text-decoration: none;
-        }
-    </style>
     {% block css %}{% endblock %}
 </head>
 <body>
     <header id="header">
         <div>
             <div id="divHeader">
-                <a href="/dummy" class="aHeader">DUMMY</a>
+                <a href="/dummy" class="aHeader"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;&nbsp;DUMMY PHP7.4 SLIM3 TWIG</a>
             </div>
         </div>
     </header>
     {% block content %}{% endblock %}
+    <div class="modal fade" id="modal" aria-hidden="true">
+        <div class="modal-dialog" style="top: 3%;width: 960px;">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
     <script src="js/lib/jquery3.5.1.js"></script>
     <script src="js/lib/jquery-ui.min.js"></script>
     <script src="js/lib/app.config.js"></script>

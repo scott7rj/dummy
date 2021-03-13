@@ -9,12 +9,10 @@ $app->get('/', function(Request $request, Response $response, $args) {
 
 $app->post('/login', function(Request $request, Response $response) {
 	try {
-		$array = array();
-		#echo $_POST['txtLogin'];
 		$controller = new LoginController();
-		#$array = $controller->autenticar($request, $response, array());
-		#return $this->view->render($response, '/index.twig', ['arr' => $array]);
-		return $this->view->render($response, '/index.twig');
+		$array = $controller->autenticar($request, $response, array());
+		print_r($array);
+		return $this->view->render($response, '/index.twig', ['arr' => $array]);
 	} catch (Exception $e) {
 		throw new Exception($e->getMessage());
 	}
